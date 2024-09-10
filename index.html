@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teballo M's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#Home" class="logo"> Candy <span>Mokoena</span> </a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Background">Background</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="Home" id="Home">
+      <div class="home-content">
+        <h1>
+          This <span>side</span>, we turn <span>ideas</span>, into
+          <span>reality</span> !
+        </h1>
+        <h2>
+          An aspiring <span>full-stack developer</span> with
+          <span>project management</span> background
+        </h2>
+        <div class="btn-group">
+          <a href="#" class="btn">Projects</a>
+          <a href="#" class="btn">Detailed CV</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="photos/MyPicture2.jpeg" alt="My Image" />
+      </div>
+    </section>
+    <section class="About" id="About">
+      <div class="about-img">
+        <img src="photos/MyPicture.jpeg" alt="MyImage" />
+      </div>
+      <div class="about-content">
+        <h3>About Me</h3>
+        <p>
+          Hi there 👋🏾, I'm Teballo Candice Mokoena, a passionate full-stack
+          developer with a focus on creating responsive and user-friendly
+          websites. For now, I specialize in front-end development using HTML,
+          CSS, and JavaScript. I am dedicated to delivering high quality code,
+          embracing new technologies, and solving complex problems creatively.
+        </p>
+        <p id="more-info" style="display: none">
+          I hold a qualification in Project Management and am excited to merge
+          web development and project management, creating seamless workflows
+          and delivering exceptional results for clients. My background in
+          project management, combined with my technical skills, allows me to
+          effectively plan, execute, and deliver projects on time and within
+          budget.
+        </p>
+        <button id="read-more-btn" class="btn">Read More</button>
+      </div>
+    </section>
+    <section class="Background" id="Background">
+      <h3 class="heading">Background</h3>
+      <div class="Background-container">
+        <div
+          class="Background-box"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <div class="Education-info">
+            <h4>Education</h4>
+            <ul class="ed">
+              <li class="type">
+                Project Management Short Course, Udemy, 2024
+                <p>
+                  Disciplines Explored incl: Project Management Life cycle and
+                  Methodologies,Agile Project Management, Scrum introduction,
+                  Excel for Project Management.
+                </p>
+              </li>
+              <hr />
+              <br />
+              <li class="type">
+                Front-End Development, SheCodes, 2024 (In Progress)
+                <p>
+                  Coding Languages covered so far incl: HTML, CSS, JavaScript,
+                  VS Code, API, GitHub, Hosting.
+                </p>
+              </li>
+              <hr />
+              <br />
+              <li class="type">
+                BSc in Construction Studies, University of Witwatersrand, 2020
+              </li>
+              <hr />
+              <br />
+              <li class="type">
+                National Senior Certificate, Noah's Ark High School, 2019
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="Background-box"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <div class="Education-info">
+            <h4>Experience</h4>
+            <ul class="ed">
+              <li class="type">
+                Junior Project Manager, Social Housing Regulatory Authority,
+                2024
+                <p>
+                  An Internship encompassing the full life cycle of a
+                  construction project, including in-depth exposure to
+                  construction principles, cost analysis, and measurements.
+                </p>
+              </li>
+              <hr />
+              <br />
+              <li class="type">
+                Marketing and House Committee member, Gateway Student
+                Accommodation, 2022-2023
+                <p>
+                  Led and participated in the student recruitment project for
+                  our student residence, serving as a representative for
+                  resident students within the residence community.
+                </p>
+              </li>
+              <br />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Contact" id="Contact">
+      <h3>Contact Me</h3>
+      <form>
+        <div class="input-group">
+          <label for="fullname">Full Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Please enter your name and surname"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <p class="coder">
+        <i
+          >This project is coded by
+          <a href="https://github.com/CandiceMokoena"
+            >Teballo Candice Mokoena</a
+          >
+        </i>
+      </p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

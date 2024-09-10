@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+body {
+  background-color: white;
+  color: rgb(32, 32, 32);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 3rem 15%;
+  box-sizing: border-box;
+
+  border-bottom: 2px solid black;
+  background-color: #a7875e;
+}
+
+#menu-icon {
+  font-size: 3.5rem;
+  color: white;
+  display: none;
+}
+
+.logo {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+span {
+  background: linear-gradient(270deg, black 10%, #a7875e 100%);
+  background-clip: text;
+  color: transparent;
+}
+.navbar a {
+  font-size: 2.3rem;
+  color: black;
+  margin-left: 4rem;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+.navbar a:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+section {
+  min-height: 100vh;
+  padding: 6rem 15%;
+}
+.Home {
+  background-color: rgb(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15rem;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.home-content h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  line-height: 2;
+}
+.home-img img {
+  width: 26vw;
+  box-shadow: 0 0 85px #a7875e;
+  border-radius: 50%;
+  transition: 0.4s ease-in-out;
+}
+.home-img img:hover {
+  box-shadow: 0 0 140px #a7875e;
+}
+.btn-group {
+  display: flex;
+  gap: 2rem;
+  padding-top: 5px;
+}
+.btn {
+  color: black;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #a7875e;
+  box-shadow: 0 0 10px #a7875e;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  border: 2px solid white;
+  transition: 0.2s ease-in-out;
+}
+.btn:hover {
+  border: 2px solid #a7875e;
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 50px #a7875e;
+}
+.About {
+  background-color: rgb(167, 135, 94, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.about-img img {
+  width: 22vw;
+  box-shadow: 0 0 85px #a7875e;
+  border-radius: 50%;
+  transition: 0.4s ease-in-out;
+}
+.about-img img:hover {
+  box-shadow: 0 0 140px #a7875e;
+}
+.about-content h3 {
+  font-size: 7rem;
+  text-align: left;
+}
+.about-content p {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+}
+.about-content .btn {
+  margin: 2rem 0;
+  background-color: white;
+  border: 2px solid #a7875e;
+}
+.about-content .btn:hover {
+  border: 2px solid white;
+  background-color: #a7875e;
+  transform: scale(1.05);
+  box-shadow: 0 0 50px #a7875e;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a7875e;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+.heading {
+  text-align: center;
+  font-size: 7rem;
+  margin: 5rem 0;
+}
+.Background {
+  color: black;
+}
+.Background-container {
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
+  gap: 3rem;
+}
+.Background-box {
+  display: flex;
+  justify-content: center;
+  border: 3px double #a7875e;
+  border-radius: 3rem;
+  height: 460px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  padding: 0 1rem;
+}
+.Background-box:hover {
+  border: 3px double black;
+  box-shadow: 0 0 85px #a7875e;
+  transform: scale(1.03);
+}
+ul,
+ol {
+  padding-left: 1rem;
+  list-style-position: inside;
+}
+li {
+  text-align: left;
+}
+
+.Education-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  padding: 0 3rem;
+  line-height: 1.5;
+}
+.Education-info h4 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+.Contact {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+.Contact h3 {
+  margin-bottom: 2rem;
+  font-size: 7rem;
+  text-align: center;
+}
+.Contact form {
+  gap: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+}
+label {
+  display: block;
+}
+input,
+textarea {
+  width: 60%;
+  font-size: 1.8rem;
+  border: 3px solid #a7875e;
+  color: rgba(0, 0, 0, 0.9);
+  margin: 1.4rem;
+}
+textarea {
+  padding: 2.5rem;
+}
+input {
+  padding: 1.5rem;
+}
+.btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  padding: 1rem 6rem;
+}
+footer {
+  background-color: #a7875e;
+  padding: 50px 0;
+  text-align: center;
+  font-size: 2rem;
+  border-top: 2px solid black;
+}
+p a {
+  color: white;
+
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+a:hover {
+  text-shadow: 2px 2px 10px white;
+  color: #a7875e;
+}
+/* Media Query for Tablets and Smaller Desktops */
+@media (max-width: 1285px) {
+  #menu-icon {
+    display: block; /* Display the menu icon for smaller screens */
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    padding: 1rem 1.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid #a7875e;
+    border-bottom: 2px solid #a7875e;
+    display: none; /* Initially hidden */
+  }
+
+  .navbar.active {
+    display: block; /* Display the navbar when active */
+  }
+
+  .navbar a {
+    display: block; /* Stack navbar items vertically */
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: white;
+  }
+
+  .Home {
+    flex-direction: column-reverse; /* Stack content vertically */
+    margin: 5rem 0;
+    gap: 5rem;
+  }
+
+  .home-content {
+    align-items: center; /* Center content */
+    text-align: center;
+  }
+
+  .home-img {
+    text-align: center;
+    width: 66vw; /* Adjust image width for smaller screens */
+  }
+
+  .About {
+    flex-direction: column-reverse; /* Stack content vertically */
+    text-align: center;
+    padding: 5rem 0;
+  }
+
+  .about-content h3 {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .about-img img {
+    width: 52vw; /* Adjust image width for smaller screens */
+  }
+
+  .Background-container {
+    grid-template-columns: 1fr; /* Make columns stack on smaller screens */
+  }
+
+  .Contact form {
+    width: 80%; /* Adjust form width for smaller screens */
+    margin: 0 auto; /* Center form horizontally */
+    font-size: 1.4rem;
+  }
+
+  input,
+  textarea {
+    width: 80%; /* Adjust input field width for smaller screens */
+  }
+  .input-group textarea {
+    width: 75%;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 5%;
+  }
+  .footer {
+    font-size: 1.5rem;
+  }
+  .about-content h3,
+  .heading {
+    font-size: 4rem;
+  }
+  .Contact h3 {
+    font-size: 3.5rem;
+  }
+  .btn {
+    padding: 0.5rem 1.5rem;
+  }
+  .logo {
+    font-size: 2.5rem;
+  }
+  .Education-info h4 {
+    font-size: 2.5rem;
+  }
+  .navbar {
+    width: 70%; /* Adjust the width of the navbar */
+  }
+
+  .Home {
+    flex-direction: column-reverse; /* Stack content vertically */
+    gap: 3rem; /* Reduce gap for mobile screens */
+  }
+
+  .home-content h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+
+  .home-content h2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .home-img img {
+    width: 54vw; /* Adjust image width for mobile screens */
+  }
+
+  .About,
+  .Background,
+  .Contact {
+    padding: 2rem; /* Reduce padding for smaller screens */
+  }
+
+  .about-content p,
+  .Education-info {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .about-img img {
+    width: 50vw; /* Make image width more flexible on mobile */
+  }
+
+  .Background-box {
+    height: auto; /* Allow background boxes to resize automatically */
+    padding: 1rem; /* Adjust padding for mobile screens */
+  }
+
+  .Contact form {
+    width: 80%; /* Full width for form on smaller screens */
+    font-size: 1.5rem;
+  }
+
+  input,
+  textarea {
+    width: 90%; /* Adjust input width for mobile screens */
+    margin: 1rem 0; /* Add margin for spacing */
+  }
+  input {
+    padding: 0.7rem;
+  }
+  textarea {
+    padding: 2rem;
+  }
+}
