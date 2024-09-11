@@ -53,14 +53,14 @@ span {
 }
 .navbar a {
   font-size: 2.3rem;
-  color: black;
+  color: white;
   margin-left: 4rem;
   transition: 0.3s ease-in-out;
   border-bottom: 3px solid transparent;
 }
 .navbar a:hover {
-  color: white;
-  border-bottom: 3px solid white;
+  color: black;
+  border-bottom: 3px solid black;
 }
 section {
   min-height: 95vh;
