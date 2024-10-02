@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   readMoreBtn.onclick = function () {
     if (moreInfo.style.display === "none") {
-      moreInfo.style.display = "block"; // Show the additional paragraph
-      readMoreBtn.textContent = "Read Less"; // Change button text
+      moreInfo.style.display = "block";
+      readMoreBtn.textContent = "Read Less";
     } else {
-      moreInfo.style.display = "none"; // Hide the additional paragraph
-      readMoreBtn.textContent = "Read More"; // Change button text
+      moreInfo.style.display = "none";
+      readMoreBtn.textContent = "Read More";
     }
   };
 });
