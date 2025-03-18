@@ -1,0 +1,122 @@
+* {
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+}
+
+.projects-page {
+  font-family: Arial, sans-serif;
+  background-color: rgb(0, 0, 0, 0.1);
+  color: #000;
+  margin: 0;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.projects-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.p-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: black;
+  font-size: 3rem;
+}
+
+span {
+  font-size: 16px;
+}
+
+.project-card {
+  background: #f5f5f5;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 3px double #a7875e;
+  border-radius: 3rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  border: 3px double black;
+}
+
+.project-card h2 {
+  color: #a7875e;
+  font-size: 20px;
+}
+
+.project-card p {
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.dashboard-btn {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  background-color: #a7875e;
+  box-shadow: 0 0 5px #a7875e;
+}
+
+.dashboard-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.code-btn {
+  color: black;
+  font-size: 12px;
+  background-color: white;
+  border: 2px solid #a7875e;
+}
+
+.code-btn:hover {
+  background-color: #a7875e;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a7875e;
+}
